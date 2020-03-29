@@ -38,6 +38,18 @@
      font-size: 0.75em;
    }
 
+  .modal-body1 {
+    background-color: #F5F5F5;
+    color: #2F2F2F;
+    width: 100%;
+
+
+
+
+  }
+
+
+
 
 
     </style>
@@ -49,9 +61,9 @@
     <header class="text-white pt-5">
 
 
-<div class="container text-center">
-  <img src= "https://www.google.com/search?q=Yannick+Lepla%C3%A9&rlz=1C5CHFA_enFR843FR843&sxsrf=ALeKk02h8PFoqS4DGXRRwQiUrpTtF4wlDA:1585133636937&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjxouf6urXoAhXVoXEKHdB_Df8Q_AUoAnoECA0QBA&biw=1276&bih=666#imgrc=j-eeZAjoYL541M/"alt="logo"/><br/>
-  <div class="my-3">
+<div class="container text-center pt-3 ">
+  <img src="img/0.jpeg"alt="logo"/><br/>
+  <div class="mt-2 my-3">
 
     <strong>LEPLAE Yannick</strong><br/>
     <em>Développement Web Communication<br/>En recherche de stage du xx juin au xx aout<br/></em>
@@ -69,7 +81,7 @@
 
 <div class="col p-0 border-right">
   <a class="btn w-100 text-white" href="tel:0646441482">
-  <span class="fas fa-phone-square"></span><br>
+  <span class="fa-2x fas fa-phone-square"></span><br>
   <span class= "text-sm text-uppercase">Appeler</span>
   </a>
 </div>
@@ -78,12 +90,10 @@
 
 <div class="col p-0 border-left">
   <a class="btn w-100 text-white" href="mailto:yannick.leplae@gmail.com">
-  <span class= "fas fa-envelope-square"></span> <br>
+  <span class= "fa-2x fas fa-envelope-square"></span> <br>
   <span class= "text-sm text-uppercase">Email</span>
   </a>
 </div>
-
-
 
 
     </header>
@@ -156,10 +166,10 @@
 
 
             </div>
-            <div class="col">
+            <div class="col pt-2">
                 <em>Réseaux sociaux</em>
                 <br>
-                <nav class="row pt-2">
+                <nav class="row pt-3">
               <a class="col-2 fa-2x" href="https://www.linkedin.com/in/yannick-leplae/"><i class="fab fa-linkedin"></i></a>
               <a class="col-2 fa-2x" href="https://twitter.com/YannickL"><i class="fab fa-twitter-square"></i></a>
               <a class="col-2 fa-2x" href="cultandpop.org"><i class="fas fa-globe"></i></a>
@@ -167,25 +177,92 @@
             </div>
             </div>
             <hr>
-            <div class="row justify-content-center">
-                <button type="button" class="btn btn-primary w-75 mx-3"data-toggle="modal" data-target="#exampleModal"><span class="mr-2 fa-2x fas fa-download"></span><span class= "uppercase">Téléchargez Vcard</span></button>
+            <div class="text-center">
+                <div class="btn btn-primary w-75 mx-3"data-toggle="modal" data-target="#exampleModal">
+                  <span class="mr-2 fa-2x fas fa-download"></span><span class= "uppercase">Téléchargez Vcard</span>
+                </div>
 
 
             </div>
 
-            <div class="row justify-content-center text-center">
-                  <button type="button" class="btn btn-dark w-75 mx-3"><span class="mr-2 fa-2x fas fa-share-alt-square"></span><span class= "uppercase">Partagez cette page</span></button>
+            <div class="text-center">
+                  <div class="btn btn-dark w-75 mx-3"data-toggle="modal" data-target="#exampleModalLong">
+                    <span class="mr-2 fa-2x fas fa-share-alt-square"></span><span class= "uppercase">Partagez cette page</span>
+                  </div>
 
             </div>
 
-          </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Enregistrer les données du contact</h5>
+                            <hr>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+
+                            <span>Comment souhaitez-vous enregistrer les coordonnées?</span><br>
+
+                            <div class="modal-body1">
+
+                              <button type="button" class="btn2 text-black w-100 " data-dismiss="modal"><span class="mr-2 fa-2x fas fa-envelope-square"></span><span>Envoyer par mail</span></button>
+                              </div>
+
+                              <div class="modal-body1">
+                                <button type="button" class="btn2 text-black w-100" data-dismiss="modal"><span class="mr-2 fa-2x fas fa-download"></span></span>Enregistrer sur mon téléphone</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
 
+
+
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Partager</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                                <div class="modal-body1">
+                                  <button type="button" class=" btn2 text-black w-100 " data-dismiss="modal"><span class="mr-2 fa-2x fab fa-facebook-square"></span><span>Facebook</span></button>
+                                  </div>
+
+                                  <div class="modal-body1">
+                                    <button type="button" class="btn2 text-black w-100" data-dismiss="modal"><span class="mr-2 fa-2x fab fa-twitter-square"></span></span>Twitter</button>
+                                  </div>
+
+                                  <div class="modal-body1">
+                                    <button type="button" class="btn2 text-black w-100" data-dismiss="modal"><span class="mr-2 fa-2x  fab fa-whatsapp-square"></span></span>WhatsApp</button>
+                                  </div>
+
+                                  <div class="modal-body1">
+
+                                    <button type="button" class="btn2 text-black w-100 " data-dismiss="modal"><span class="mr-2 fa-2x fas fa-envelope-square"></span><span>Envoyer par mail</span></button>
+                                    </div>
+
+                                    <div class="modal-body1 text-center">
+                                      <span class=" mr-2 mt-2 fa-2x far fa-clipboard"></span>
+                                      <label ="site-search"><input type="copy" id="copie" name="q"aria-label="Copier mail"></label>
+                                      <button class= "mx-3"><span>Copier</span></button>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
